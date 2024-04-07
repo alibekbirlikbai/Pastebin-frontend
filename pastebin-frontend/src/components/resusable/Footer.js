@@ -3,9 +3,9 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      <h2>
-        Footer
-      </h2>
+        <a href="mailto:alibekbirlikbai@gmail.com" target='_blank'>
+          alibekbirlikbai@gmail.com
+        </a>
     </footer>
   );
 }
