@@ -1,22 +1,25 @@
 import React from 'react';
 
-import Header from '../resusable/Header'
-import Links from '../resusable/Links'
-import Content from '../resusable/Content'
-import Navbar from '../resusable/Navbar';
-
 function Home() {
   return (
-    <div className='wrapper'>
-      <Header />
-    
-      <div className='container'>
-        <Links/>
+    <div className='Content_COMPONENT'>
+      <main>
+        <div className='content-container'>
+          <div className='text-container'>
+            <h1 className='content-title'>
+              API сервис
+            </h1>
 
-        <Content/>
-      </div>
+            <div className='content-body'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
 
-      <Navbar/>
+          <div className='img-container'>
+
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

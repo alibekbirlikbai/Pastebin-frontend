@@ -20,6 +20,8 @@
     }
 
     .container {
+        flex: 1; /* Make the container flex item grow to fill the remaining space */
+
         margin: 0;
         padding: 0;
         max-width: 100%;
@@ -27,8 +29,7 @@
         display: flex;
         flex-direction: row;
 
-        flex: 1; /* Make the container flex item grow to fill the remaining space */
-
+        // comment
         border: 3px dashed red;
         background-color: lightgreen;
 
@@ -94,78 +95,92 @@
             }
         }
 
-        .Content_COMPONENT {
-            width: 100%;
+        .main-info {
+            flex: 1; /* Make the container flex item grow to fill the remaining space */
 
             display: flex;
             flex-direction: column;
+            justify-content: end;
 
-            border: 3px dashed black;
-            background-color: yellow;
+            // comment
+            border: 3px dashed red;
+            background-color: goldenrod;
 
-            main {
+            .Content_COMPONENT {
                 flex: 1; /* Make the container flex item grow to fill the remaining space */
 
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                
-                padding: 10vw;
-
-                // comment
-                border: 5px dashed blue;
-
-                .content-container {
+    
+                border: 3px dashed black;
+                background-color: yellow;
+    
+                main {
+                    flex: 1; /* Make the container flex item grow to fill the remaining space */
+    
                     display: flex;
-                    flex-direction: row;
-                    gap: 5vw;
-
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    padding: 10vw;
+    
                     // comment
-                    border: 3px dashed black;
-                    background-color: aquamarine;
-
-                    .text-container {
-                        width: 50vw;
-
+                    border: 5px dashed blue;
+    
+                    .content-container {
                         display: flex;
-                        flex-direction: column;
-                        gap: 1vh;
-
+                        flex-direction: row;
+                        gap: 5vw;
+    
+                        // comment
                         border: 3px dashed black;
-                        background-color: red;   
-
-                        .content-title {
-                            margin: 0;
-
-                            // comment
+                        background-color: aquamarine;
+    
+                        .text-container {
+                            width: 50vw;
+    
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1vh;
+    
                             border: 3px dashed black;
-                            background-color: beige;
+                            background-color: red;   
+    
+                            .content-title {
+                                margin: 0;
+    
+                                // comment
+                                border: 3px dashed black;
+                                background-color: beige;
+                            }
+    
+                            .content-body {
+                                text-align: justify;
+    
+                                // comment
+                                border: 3px dashed black;
+                                background-color: greenyellow;                        
+                            }
                         }
-
-                        .content-body {
-                            text-align: justify;
-
-                            // comment
+    
+                        .img-container {
+                            width: 100%;
+                            height: 100%;
+    
                             border: 3px dashed black;
-                            background-color: greenyellow;                        
+                            background-color: blue; 
                         }
-                    }
-
-                    .img-container {
-                        width: 100%;
-                        height: 100%;
-
-                        border: 3px dashed black;
-                        background-color: blue; 
                     }
                 }
+    
+    
             }
-
+    
             footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
-
+    
                 border: 3px dashed black;
                 background-color: coral;   
             }
