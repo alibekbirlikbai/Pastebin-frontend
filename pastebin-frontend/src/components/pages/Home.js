@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../resusable/Header'
 import Links from '../resusable/Links'
 import Content from '../resusable/Content'
-import Footer from '../resusable/Footer'
+import Navbar from '../resusable/Navbar';
 
 function Home() {
   return (
@@ -15,6 +15,8 @@ function Home() {
 
         <Content/>
       </div>
+
+      <Navbar/>
     </div>
   );
 }

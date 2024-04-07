@@ -4,6 +4,7 @@
     height: 100vh;
     width: 100vw;
 
+    // comment
     border: 3px dashed blue;
 
     header {
@@ -167,6 +168,38 @@
 
                 border: 3px dashed black;
                 background-color: coral;   
+            }
+        }
+    }
+
+    nav {
+        position: absolute;
+        bottom: 0; /* Move the element 50% down from the top of its parent */
+        left: 50%; /* Move the element 50% from the left of its parent */
+        transform: translate(-50%, -50%); /* Center the element by shifting it back by half of its own width and height */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 2vh 1vw;
+
+        //comment
+        background-color: lightskyblue;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+
+                // comment
+                border: 3px dashed blue;
             }
         }
     }
