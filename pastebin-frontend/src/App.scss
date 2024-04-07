@@ -1,0 +1,87 @@
+.wrapper {    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+    border: 3px dashed blue;
+
+    header {
+        border: 3px dashed black;
+        background-color: aqua;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        flex: 1; /* Make the container flex item grow to fill the remaining space */
+
+        border: 3px dashed red;
+        background-color: lightgreen;
+
+        .Links_COMPONENT {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            border: 3px dashed black;
+            background-color: lightblue;
+        }
+
+        .Content_COMPONENT {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            border: 3px dashed black;
+            background-color: yellow;
+
+            main {
+                flex: 1; /* Make the container flex item grow to fill the remaining space */
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                padding: 0 10vw;
+                border: 5px dashed blue;
+
+                .content-container {
+                    display: flex;
+                    flex-direction: row;
+                    border: 3px dashed black;
+
+                    .text-container {
+                        width: 100%;
+                        border: 3px dashed black;
+                        background-color: red;   
+                    }
+
+                    .img-container {
+                        width: 500px;
+                        height: 300px;
+
+                        border: 3px dashed black;
+                        background-color: blue; 
+                    }
+                }
+            }
+
+            footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+
+                border: 3px dashed black;
+                background-color: coral;   
+            }
+        }
+    }
+}
+

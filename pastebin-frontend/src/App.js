@@ -1,31 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import './App.scss';
+
+import React, { Component }  from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
+import Home from './components/pages/Home';
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch('http://localhost:8080/api/v1/pastbin/bins');
-      const jsonData = await response.json();
-      console.log('Received data:', jsonData); // Log received data
-      setData(jsonData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
   return (
-    <div>
-      <h1>Data from API</h1>
-      <ul>
-        {data.map(bin => (
-          <li key={bin.id}>{bin.url}</li>
-        ))}
-      </ul>
+    <div className="App">
+      <Router>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+          </Routes>
+      </Router>
     </div>
   );
 }
