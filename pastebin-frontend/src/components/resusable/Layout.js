@@ -6,14 +6,16 @@ import Navbar from './Navbar';
 
 function Layout({ children }) {
   return (
-    <div className='wrapper'>
+    <div className='wrapper'>      
       <Header />
 
       <div className='container'>
         <Links />
 
         <div className='main-info'>
-          {children} {/* This will render the content specific to each page */}
+          <div className='util_center_vertical_horizontal'>
+            {children}
+          </div>
           
           <Footer />
         </div>

@@ -2,8 +2,16 @@ import React from 'react';
 
 function Create() {
   return (
-    <div>
-      <h2>Create Page</h2>
+    <div className='Content_COMPONENT'>
+      <main>
+        <div className='content-container'>
+          <div className='text-container'>
+            <h1 className='content-title  text-center'>
+              Create Page
+            </h1>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

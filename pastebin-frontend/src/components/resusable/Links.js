@@ -8,26 +8,25 @@ function Links() {
 
         <div className='contacts-block'>
           <div className='contacts'>
-              <a href="https://alibekbirlikbai.github.io" target='_blank'>
-                <span>
-                  my site
+              <a href="https://alibekbirlikbai.github.io" target='_blank' className='text-underline_hover'>
+                  <span>
+                    my site
                   </span>
               </a>
           </div>
 
           <div className='social-media'>
             <div className='icon'>
-              <a href="https://github.com/alibekbirlikbai/Pastebin-backend" target='_blank'>
-                <FontAwesomeIcon icon={faGithub} />
+              <a href="https://github.com/alibekbirlikbai" target='_blank'>
+                <FontAwesomeIcon icon={faGithub} size='lg'/>
               </a>
             </div>
 
             <div className='icon'>
               <a href="https://www.linkedin.com/in/alibek-birlikbai" target='_blank'>
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <FontAwesomeIcon icon={faLinkedinIn} size='lg'/>
               </a>
             </div>
-
           </div>
         </div>
     </div>

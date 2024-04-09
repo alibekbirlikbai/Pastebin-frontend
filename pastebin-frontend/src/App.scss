@@ -1,22 +1,76 @@
+$layout-padding-top: 1vh;
+$layout-padding-bottom: 3vh;
+$layout-padding-left-right: 1.5vw;
+
+$important-font-size: 1.1em;
+
+// Project General styles
 .wrapper {    
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
 
+    background-color: #535ae8;
+    color: #fff;
+
     // comment
-    border: 3px dashed blue;
+    // border: 1px dashed white;
 
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .header-block {
+        // comment
+        // border: 3px dashed black;
+        // background-color:aqua;
 
-        padding: .5vh 1vw;
+        .important-message {
+            text-align: center;
 
-        border: 3px dashed black;
-        background-color: aqua;
+            padding: 8px 0;
+            background-color: #f4f5f7;            
+            
+            // comment
+            // border: 3px dashed black;
+
+            a {
+                color: #161e2e;
+            }
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            padding: 0 $layout-padding-left-right;
+            padding-top: $layout-padding-top;
+    
+            // comment
+            // border: 1px dashed white;
+            // background-color: aqua;
+    
+            h3 {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+                gap: .3vw;
+    
+                font-style: italic;
+    
+                // comment
+                // border: 1px dashed white;    
+                
+                sup {
+                    position: relative;
+                    top: -25px;
+    
+                    font-size: medium;
+    
+                    // comment
+                    // border: 1px dashed white;                 
+                }
+            }
+        }
     }
 
     .container {
@@ -30,20 +84,20 @@
         flex-direction: row;
 
         // comment
-        border: 3px dashed red;
-        background-color: lightgreen;
+        // border: 1px dashed white;
+        // background-color: lightgreen;
 
         .Links_COMPONENT {
             display: flex;
             flex-direction: column;
             justify-content: end;
 
-            padding-left: 2vh;
-            padding-bottom: 2vh;
+            padding-left: $layout-padding-left-right;
+            padding-bottom: $layout-padding-bottom;
 
             // comment
-            border: 3px dashed black;
-            background-color: lightblue;
+            // border: 1px dashed white;
+            // background-color: lightblue;
 
             .contacts-block {
                 display: flex;
@@ -52,22 +106,29 @@
                 gap: 10vh;
 
                 // comment
-                border: 3px dashed black;
-                background-color: lightblue;
+                // border: 1px dashed white;
+                // background-color: lightblue;
 
                 .contacts {
                     transform: rotate(90deg);
+                    width: 2vw;
 
                     // comment
-                    border: 3px dashed black;
-                    background-color: lightseagreen;  
+                    // border: 1px dashed white;
+                    // background-color: lightseagreen;  
                     
                     a {
                         display: block;
                         width: fit-content;
 
+                        padding: 0;
+                        margin: 0;
+
                         span {
                             white-space: nowrap;
+
+                            padding: 0;
+                            margin: 0;
     
                             // comment                        
                             // background-color: red;
@@ -80,16 +141,17 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 1vh;
+                    gap: 1.5vh;
 
-                    // comment
-                    border: 3px dashed black;
-                    background-color: lightpink;  
                     text-align: center; 
 
-                    div {
+                    // comment
+                    // border: 1px dashed white;
+                    // background-color: lightpink;  
+
+                    .icon {
                         // comment
-                        border: 3px dashed black;
+                        // border: 1px dashed white;
                     }
                 }
             }
@@ -100,90 +162,126 @@
 
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: space-between;
 
             // comment
-            border: 3px dashed red;
-            background-color: goldenrod;
+            // border: 1px dashed white;
+            // background-color: goldenrod;
 
-            .Content_COMPONENT {
+            main {
                 flex: 1; /* Make the container flex item grow to fill the remaining space */
-
+                
                 display: flex;
-                flex-direction: column;
-    
-                border: 3px dashed black;
-                background-color: yellow;
-    
-                main {
-                    flex: 1; /* Make the container flex item grow to fill the remaining space */
-    
+                flex-direction: row;
+                justify-content: start;
+                
+                padding-left: 20vw;
+                padding-top: 14vw;
+
+                // comment
+                // border: 5px dashed black;
+                // border: 1px dashed white;
+
+                .content {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    
-                    padding: 10vw;
-    
+                    flex-direction: row;
+                    gap: 5vw;
+
+                    // justify-content: center;
+
                     // comment
-                    border: 5px dashed blue;
-    
-                    .content-container {
+                    // border: 1px dashed white;
+                    // background-color: aquamarine;
+
+                    .block {
                         display: flex;
-                        flex-direction: row;
-                        gap: 5vw;
-    
+                        flex-direction: column;
+                        gap: 1vh;
+
                         // comment
-                        border: 3px dashed black;
-                        background-color: aquamarine;
-    
-                        .text-container {
-                            width: 50vw;
-    
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1vh;
-    
-                            border: 3px dashed black;
-                            background-color: red;   
-    
-                            .content-title {
-                                margin: 0;
-    
-                                // comment
-                                border: 3px dashed black;
-                                background-color: beige;
-                            }
-    
-                            .content-body {
-                                text-align: justify;
-    
-                                // comment
-                                border: 3px dashed black;
-                                background-color: greenyellow;                        
-                            }
+                        // border: 1px dashed white;
+                        // background-color: red;   
+
+                        .block__title {
+                            margin: 0;
+
+                            // comment
+                            // border: 1px dashed white;
+                            // background-color: beige;
                         }
-    
-                        .img-container {
-                            width: 100%;
-                            height: 100%;
-    
-                            border: 3px dashed black;
-                            background-color: blue; 
+
+                        .block__body {
+                            text-align: justify;
+
+                            // comment
+                            // border: 1px dashed white;
+                            // background-color: greenyellow; 
+                            
+                            .block__item {
+                                display: flex;
+                                flex-direction: row;
+                                gap: .4vw;
+
+                                .block--img {
+                                    width: 10vw;
+            
+                                    // comment
+                                    // border: 1px dashed white;
+                                }
+                            }
                         }
                     }
+
+
+                    #docs-description {
+                        width: 30vw;
+                    }
+                    #docs-img {
+                        width: 15vw;
+                        height: 10vw;
+
+                        // comment
+                        // background-color: #fff; 
+                    }
                 }
-    
-    
             }
     
             footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
+
+                padding-bottom: $layout-padding-bottom;
+                padding-right: $layout-padding-left-right + 1.5vw;
     
-                border: 3px dashed black;
-                background-color: coral;   
+                //comment
+                // border: 1px dashed white;
+                // background-color: coral;   
+
+                .email-block {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5vw;
+                    //comment
+                    // border: 1px dashed white;                    
+
+                    img {
+                        width: 1.1vw;
+
+                        //comment
+                        // border: 1px dashed white;                         
+                    }
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        gap: .5vw;
+
+                        //comment
+                        // border: 1px dashed white;    
+                    }
+                }
             }
+            
         }
     }
 
@@ -191,32 +289,90 @@
         position: absolute;
         bottom: 0; /* Move the element 50% down from the top of its parent */
         left: 50%; /* Move the element 50% from the left of its parent */
-        transform: translate(-50%, -50%); /* Center the element by shifting it back by half of its own width and height */
+        transform: translate(-50%, -30%); /* Center the element by shifting it back by half of its own width and height */
 
         display: flex;
         flex-direction: row;
         justify-content: center;
 
-        padding: 2vh 1vw;
+        padding: 1.5vh .9vw;
+        padding-bottom: 1.6vh;
+
+        background-color: #fff;
+        border-radius: 30px;
 
         //comment
-        background-color: lightskyblue;
+        // background-color: lightskyblue;
 
         ul {
             display: flex;
             flex-direction: row;
-            gap: 1vw;
+            gap: .3vw;
 
             padding: 0;
             margin: 0;
 
             li {
-                list-style-type: none;
+                list-style-type: none;           
+
 
                 // comment
-                border: 3px dashed blue;
+                // border: 1px dashed black;
+
+                a {
+                    color: #535ae8;
+
+                    padding: 0 1.4vw;
+                    padding-bottom: .5vh;
+                    border-radius: 30px;
+                    // border: 3px solid #fff;   
+                    
+                    // transition: all .3s;      
+                    
+                    // comment
+                    // border: 3px dashed black;                     
+                }
+
+                a:hover {
+                    // border-color: #535ae8;      
+                    background-color: #535ae8;
+                    color: #fff;
+                    // transition: all .7s;          
+                }
             }
         }
     }
 }
 
+// Styles for - elements + util_styles
+.wrapper {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .text-underline_hover:hover {
+        text-decoration: underline;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+    .util_center_vertical_horizontal {
+        // comment
+        // border: 1px dashed white;        
+    }
+}
+
+// Assign values 
+.wrapper {
+    header, footer, .contacts > a {
+        font-size: $important-font-size;
+    }
+
+    nav {
+        ul {
+            font-size: $important-font-size + .5em;
+        }
+    }
+}

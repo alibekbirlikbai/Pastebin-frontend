@@ -6,15 +6,15 @@ function Navbar() {
     <nav>
         <ul>
             <li>
-                <Link to="/search">Search Bin</Link>
+                <Link to="/search">Search</Link>
             </li>
 
             <li>
-                <Link to="/create">Create Bin</Link>
+                <Link to="/create">Create</Link>
             </li>
 
             <li>
-                <Link to="/list">All Avilable Bins</Link>
+                <Link to="/list">All Avilable</Link>
             </li>
         </ul>
     </nav>

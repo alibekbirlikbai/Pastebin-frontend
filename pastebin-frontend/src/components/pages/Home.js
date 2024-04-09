@@ -1,26 +1,51 @@
 import React from 'react';
 
+import Robot from '../../images/robot.svg' 
+
+
 function Home() {
   return (
-    <div className='Content_COMPONENT'>
-      <main>
-        <div className='content-container'>
-          <div className='text-container'>
-            <h1 className='content-title'>
-              API сервис
-            </h1>
+    <main>
+      <div className='content'>
+        <div className='block' id='docs-description'>
+          <h1 className='block__title'>
+            API сервис
+          </h1>
 
-            <div className='content-body'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div className='block__body'>
+            <div className='block__item'>
+              Документация проекта (Добавлю позже)
+            </div>
+
+            <div className='block__item'>
+              <strong>
+                Подробнее: 
+              </strong>
+
+              <a href="https://alibekbirlikbai.github.io/projects#current-projects" target='_blank' className='text-underline_hover'>
+                <i>
+                  про разработку
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className='block' id='docs-img'>
+          <div className='block__body'>
+            <div className='block__item'>
+              <div className='block--img'>
+                {/* <img src={Robot} alt="My Image"/> */}
+              </div>
             </div>
           </div>
 
-          <div className='img-container'>
-
+          <div className='block__title'>
+            
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+  </main>
   );
 }
 
