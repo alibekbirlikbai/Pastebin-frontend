@@ -17,10 +17,10 @@ function App() {
       <Router>
           <Layout>
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/search" element={<Search />} />
-              <Route exact path="/create" element={<Create />} />
-              <Route exact path="/list" element={<List />} />
+              <Route exact path="/pastebin" element={<Home />} />
+              <Route exact path="/pastebin/search" element={<Search />} />
+              <Route exact path="/pastebin/create" element={<Create />} />
+              <Route exact path="/pastebin/list" element={<List />} />
             </Routes>
           </Layout>
       </Router>

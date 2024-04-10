@@ -10,7 +10,7 @@ function Header() {
 
       <header>
         <h3>
-          <Link to="/">Pastebin project</Link>
+          <Link to="/pastebin">Pastebin project</Link>
 
           <sup>
             docs
